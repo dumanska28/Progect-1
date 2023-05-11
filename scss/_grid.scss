@@ -1,0 +1,22 @@
+@use "helpers" as *;
+
+.row {
+  display: flex;
+  @include flex-box(row, space-between);
+}
+
+.header__list {
+  display: flex;
+  @include flex-box(row, space-between, 40);
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  @media screen and (max-width: 576px){
+    flex-direction: column;
+  }
+}
+
+.justify-content{
+  justify-content: space-around;
+}

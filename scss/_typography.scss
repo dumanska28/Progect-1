@@ -1,0 +1,177 @@
+@use "helpers" as *;
+
+.heading__h1 {
+  @include heading(80px, 88px, 700);
+  font-family: $font-headings;
+  max-width: 600px;
+  margin-top: 20px;
+  @media only screen and (max-width: 992px) {
+    @include heading(45px, 45px, 500);
+    text-align: center;
+   
+  }
+  @media only screen and (max-width: 768px) {
+    @include heading(40px, 40px, 500);
+    margin-left: 30px;
+  }
+}
+
+.section-1__text {
+  @include text(18px, 500, 22px);
+  margin: 50px 0 66px 0;
+  @media only screen and (max-width: 992px){
+    margin: 20px 0 20px 0;
+  }
+}
+
+.heading-h2 {
+  @include heading(40px, 52px, 700);
+  font-family: $font-headings;
+  padding: 100px 0 40px 0;
+  @media only screen and (max-width: 992px){
+    padding: 50px 0 20px 0;
+    @include heading(30px, 40px, 500);
+  }
+}
+
+.section-2__text {
+  @include text(18px, 500, 28px);
+  padding-bottom: 110px;
+  @media only screen and (max-width: 992px){
+    padding-bottom: 60px;
+  }
+}
+
+.section-3__text {
+  @include text(18px, 500, 28px);
+  margin-bottom: 80px;
+}
+
+.text-align {
+  text-align: center;
+}
+
+// section-4
+
+.heading-h3 {
+  font-family: $font-headings;
+  @include heading(24px, 31px, 400);
+  padding: 60px 0 20px 0;
+  @media screen and (max-width: 992px){
+    padding-top: 30px;
+  }
+}
+
+.card__text {
+  @include text(16px, 400, 25px);
+  padding-bottom: 20px;
+}
+
+.card__link {
+  @include text(16px, 700, 25px);
+  color: $color-heading;
+  padding-bottom: 30px;
+}
+
+.arrow {
+  color: $color-middle-violet;
+  margin-left: 10px;
+}
+
+.card__text-2 {
+  padding-bottom: 44px;
+@media screen and (max-width: 992px){
+  padding-bottom: 15px;
+}
+
+}
+
+.card__text-3{
+  padding-bottom: 100px;
+  @media screen and (max-width: 992px){
+    padding-bottom: 30px;
+  }
+}
+
+.card__text-4{
+  padding-bottom: 36px;
+  @media screen and (max-width: 992px){
+    padding-bottom: 6px;
+  }
+}
+
+// section-5
+
+.section-5__h2{
+  color: $color-main;
+  text-align: center;
+}
+
+.heading-h4{
+  @include text(16px, 500, 25px);
+  padding: 50px 0 2px 0;
+  @media screen and (max-width: 576px){
+    padding-top: 20px;
+  }
+}
+
+.section-5__link{
+  @include text(14px, 500, 22px);
+  color: $color-violet;
+}
+
+.section-5__text{
+  @include text(16px, 400, 25px);
+  padding: 18px 0 50px 0;
+  @media screen and (max-width: 576px){
+    padding: 10px 0 20px 0;
+  }
+}
+
+// section-6
+
+.section-6__text{
+  @include text(18px, 500, 28px);
+}
+
+// footer
+
+.text-adress{
+  @include text(16px, 500, 28px);
+  color: $color-heading;
+  margin:60px 0 10px 0;
+}
+
+.text-email{
+  @include text(16px, 400, 28px);
+  color: $color-heading;
+  margin-bottom: 10px;
+}
+
+.footer__link-main{
+  @include text(16px, 600, 25px);
+  color: $color-heading;
+  padding-bottom: 30px; 
+  &:hover{
+    color: $color-pink;
+  }
+  @media screen and (max-width: 992px){
+    padding-bottom: 20px;
+  }
+}
+
+.footer__link{
+  @include text(16px, 500, 25px);
+ color: $color-main;
+ padding-top: 10px;
+ &:hover{
+  color: $color-middle-violet;
+  transform: scale(1.2)
+ }
+}
+
+.last-text{
+  @include text(12px, 300, 21px);
+  color: $color-heading;
+  margin-top: 100px;
+}
