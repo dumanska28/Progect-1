@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+@mixin button($background: none, $color: none, $padding: 0, $radius: 0) {
+  background: $background;
+  color: $color;
+  padding: 16px 52px;
+  border-radius: 50px;
+}
+
+@mixin heading(
+  $font-size: 0,
+  $line-height: 0,
+  $width: 0,
+  $color: $color-heading
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $width;
+  color: $color-heading;
+}
+
+@mixin text($font-size: 0, $width: 0, $line-height: 0) {
+  font-size: $font-size;
+  font-weight: $width;
+  line-height: $line-height;
+}
+
+@mixin flex-box($direction: row, $justify: initial, $gap: 0) {
+  flex-direction: $direction;
+  justify-content: $justify;
+  gap: #{$gap}px;
+}

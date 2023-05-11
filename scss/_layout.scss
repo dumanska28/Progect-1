@@ -1,0 +1,14 @@
+@use "helpers" as *;
+
+// header
+.nav__link {
+  @include text(16px, 500px, 25px);
+  color: $color-main;
+  &:hover {
+    color: $color-middle-violet;
+  }
+}
+
+.align-items {
+  align-items: center;
+}
